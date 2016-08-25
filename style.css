@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #333;
+	font-family: 'Raleway';
+}
+.wrapper{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border: 1px solid #333;
+}
+.flex-container{
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.flex-child{
+	width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+}
+.flex-child:nth-child(odd){
+	border: 1px solid red;
+}
+.menu{
+	flex-shrink: 3;
+}
+.img-flex{
+	flex-shrink: 2;
+}
+.menu-list{
+	background-color: white;
+	display: flex;
+	height: 100%;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.menu-item{
+	list-style-type: none;
+	background-color: red;
+	text-align: center;
+	width: 50%;
+}
+.menu-item:nth-child(odd){
+	background-color: blue;
+}
+.menu-item i{
+	background-color: white;
+	margin-top: 40px;
+}
+.menu-text{
+	font-size: 18px;
+	margin-top: 15px;
+}
+/**************************/
+.hero-img{
+	background: url(trees.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	height: 70vh;
+}
+.hero-text{
+	color: white;
+	font-family: 'Josefin Slab';
+	font-size: 80px;
+	margin-left: -30px;
+	padding-bottom: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 320px){
+	.menu{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left:5%;
+		cursor: pointer;
+	}
+	.menu:after{
+		content: '1';
+		position: relative;
+		color: black;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px){
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+@media screen and (min-width: 1025px){
+
+}
